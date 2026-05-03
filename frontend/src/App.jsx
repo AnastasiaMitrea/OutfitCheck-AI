@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import VirtualCloset from './components/VirtualCloset';
+import OutfitCanvas from './components/OutfitCanvas';
 
 function App() {
+  const [clothes, setClothes] = useState([]);
+
   return (
     <div className="min-h-screen bg-gray-50 p-8">
       <header className="mb-8">
@@ -10,7 +13,8 @@ function App() {
       </header>
       
       <main>
-        <VirtualCloset />
+        <VirtualCloset clothes={clothes} setClothes={setClothes} />
+        <OutfitCanvas availableClothes={clothes} />
       </main>
     </div>
   );

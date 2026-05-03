@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import AIAutoCategorizer from '../services/ai';
 
-export default function VirtualCloset() {
-    const [clothes, setClothes] = useState([]);
+export default function VirtualCloset({ clothes, setClothes }) {
     const [isAnalyzing, setIsAnalyzing] = useState(false);
 
     const handleFileUpload = async (event) => {
@@ -13,8 +12,6 @@ export default function VirtualCloset() {
         
         setIsAnalyzing(true);
         try {
-            // Simulate AI categorization (since this is an MVP without backend logic running)
-            // We use the AI Agent #1 here
             const tags = await AIAutoCategorizer.categorizeItem(imageUrl);
             
             const newItem = {
@@ -26,7 +23,6 @@ export default function VirtualCloset() {
             setClothes(prev => [...prev, newItem]);
         } catch (error) {
             console.error("AI Error:", error);
-            // Fallback if model fails to load
             setClothes(prev => [...prev, {
                 id: Date.now(),
                 imageUrl,
@@ -61,7 +57,7 @@ export default function VirtualCloset() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                {clothes.map(item => (
+                {clothes && clothes.map(item => (
                     <div key={item.id} className="border rounded-lg overflow-hidden shadow-sm">
                         <img src={item.imageUrl} alt="Clothing item" className="w-full h-48 object-cover" />
                         <div className="p-3">
