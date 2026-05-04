@@ -1,9 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import VirtualCloset from './components/VirtualCloset';
 import OutfitCanvas from './components/OutfitCanvas';
+import SearchBar from './components/SearchBar';
 
 function App() {
   const [clothes, setClothes] = useState([]);
+  const [filteredClothes, setFilteredClothes] = useState([]);
+
+  // Sync filtered clothes when clothes change
+  useEffect(() => {
+    setFilteredClothes(clothes);
+  }, [clothes]);
 
   return (
     <div className="min-h-screen bg-gray-50 p-8">
@@ -13,7 +20,9 @@ function App() {
       </header>
       
       <main>
-        <VirtualCloset clothes={clothes} setClothes={setClothes} />
+        <SearchBar clothes={clothes} setFilteredClothes={setFilteredClothes} />
+        {/* Pass filteredClothes to VirtualCloset to display only search results */}
+        <VirtualCloset clothes={filteredClothes} setClothes={setClothes} />
         <OutfitCanvas availableClothes={clothes} />
       </main>
     </div>
