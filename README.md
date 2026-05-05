@@ -46,6 +46,19 @@
 | **Tighinean Sonia** | 
 
 ---
+
+### 🚀 MDS Project - Etapa Intermediară (Deliverables)
+
+1. **User Stories & Backlog**: Găsite în secțiunea de mai sus.
+2. **Diagrame (Arhitectură și Workflow)**: [Vezi diagramele](diagrams/architecture.md)
+3. **Source Control & Git**: Branch-ul `Sonia` a fost creat. Pull Requests și commits au fost adăugate conform cerințelor.
+4. **Teste Automate & Evals**: [Vezi testele](tests/test_agents.py) rulate automat pentru a valida agenții AI.
+5. **Raportare Bug & Rezolvare**: (Simulat) Un bug de inițializare a modelului a fost raportat și rezolvat prin PR-uri pe acest branch. [Detalii în pipeline CI].
+6. **Pipeline CI/CD**: Configurarea GitHub Actions se află în [.github/workflows/main.yml](.github/workflows/main.yml).
+7. **Raport utilizare AI**: [Raport AI Tools](docs/ai_usage_report.md)
+8. **2 Agenți AI Locali**: Implementați în [app.py](app.py) (Contextual Stylist & Fashion Critic folosind `flan-t5-small` local).
+
+---
 <div align="center">
   <sub>MDS Project 2026 • FMI Unibuc</sub>
 </div>
