@@ -13,6 +13,14 @@ class WardrobeItemBase(BaseModel):
 class WardrobeItemCreate(WardrobeItemBase):
     pass
 
+class WardrobeItemUpdate(BaseModel):
+    image_url: Optional[str] = None
+    category: Optional[str] = None
+    color: Optional[str] = None
+    style: Optional[str] = None
+    season: Optional[str] = None
+    tags: Optional[str] = None
+
 class WardrobeItemResponse(WardrobeItemBase):
     id: int
     user_id: int
