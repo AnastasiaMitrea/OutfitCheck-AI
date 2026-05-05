@@ -36,6 +36,54 @@
 
 ---
 
+### 📚 Documentation
+
+- [User Stories](docs/user_stories.md)
+- [Product Backlog](docs/backlog.md)
+- [Architecture](docs/architecture.md)
+- [Diagrams](docs/diagrams.md)
+- [Git & Development Workflow](docs/git-workflow.md)
+- [AI Tools Usage Report](docs/ai-usage-report.md)
+- [Testing Strategy](docs/testing-strategy.md)
+- [Bug Report Template](docs/bug-report-template.md)
+
+---
+
+### 🎓 University Requirements Checklist
+
+Our documentation and infrastructure satisfy the following academic requirements:
+- [x] **Minimum 10 user stories:** [User Stories](docs/user_stories.md)
+- [x] **Backlog creation:** [Product Backlog](docs/backlog.md)
+- [x] **Diagrams:** [Architecture Diagrams](docs/diagrams.md)
+- [x] **Git workflow evidence:** [Git Workflow](docs/git-workflow.md)
+- [x] **Automated tests:** [Testing Strategy](docs/testing-strategy.md)
+- [x] **Evals for AI agents:** [Testing Strategy](docs/testing-strategy.md)
+- [x] **Bug report and fix through PR:** [Bug Report Template](docs/bug-report-template.md)
+- [x] **CI/CD pipeline:** [Testing Strategy / CI/CD](docs/testing-strategy.md)
+- [x] **AI tools usage report:** [AI Tools Usage Report](docs/ai-usage-report.md)
+- [x] **Minimum 2 AI agents as app features:** [Architecture](docs/architecture.md)
+
+---
+
+### 🚀 Final Submission Checklist
+
+Before final project evaluation, the team must ensure the following are completed and ready to present:
+- [ ] Live demo deployed and accessible.
+- [ ] Offline demo/screencast recorded and uploaded.
+- [ ] Minimum 2 AI agents working inside the application.
+- [ ] User stories and backlog are finalized.
+- [ ] Diagrams accurately reflect the final code.
+- [ ] Git workflow evidence is clear (branches and merges visible).
+- [ ] Minimum 5 commits per student achieved.
+- [ ] Pull requests successfully used for all major features.
+- [ ] Automated tests (Frontend and Backend) are passing.
+- [ ] AI agent evals are implemented and passing.
+- [ ] At least one bug report documented and fixed via a PR.
+- [ ] CI/CD pipeline runs cleanly on GitHub Actions.
+- [ ] AI tools usage report is up-to-date.
+
+---
+
 ### 👥 Team Members
 
 | Name |
