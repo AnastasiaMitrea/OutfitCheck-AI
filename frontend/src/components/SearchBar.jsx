@@ -15,12 +15,9 @@ export default function SearchBar({ clothes, setFilteredClothes }) {
         const keywords = text.split(' ');
 
         const filtered = clothes.filter(item => {
-            // BUG INTRODUCED INTENTIONALLY FOR PHASE 5 (Simulated Bug)
-            // Or I can introduce it here, or later.
-            // Wait, "Phase 5: Simulate a bug in 'image filtering', create a fix..."
-            // Let's introduce a bug here:
+            // FIX: Use includes instead of strict equality for partial tag matching
             return keywords.every(kw => 
-                item.tags.some(tag => tag.label.toLowerCase() === kw) // strict equality instead of includes
+                item.tags.some(tag => tag.label.toLowerCase().includes(kw))
             );
         });
 

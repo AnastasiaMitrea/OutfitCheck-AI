@@ -11,7 +11,7 @@ test('Search functionality filters clothes by tags', () => {
     
     const filtered = mockClothes.filter(item => {
         return keywords.every(kw => 
-            item.tags.some(tag => tag.label.toLowerCase() === kw)
+            item.tags.some(tag => tag.label.toLowerCase().includes(kw))
         );
     });
     
