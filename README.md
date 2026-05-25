@@ -68,15 +68,15 @@ Acest repository conține toate elementele cerute pentru proiect:
 | ID | Prioritate | Funcționalitate | Status |
 | :--- | :--- | :--- | :--- |
 | US-01 | 🔴 Must Have | Autentificare și creare cont securizat | ✅ Done |
-| US-02 | 🔴 Must Have | Upload haine cu auto-categorizare AI (Gemini Vision) | ✅ Done |
-| US-03 | 🔴 Must Have | CRUD complet garderobă virtuală | ✅ Done |
-| US-04 | 🔴 Must Have | Sugestii outfit bazate pe vreme și ocazie | ✅ Done |
-| US-05 | 🔴 Must Have | Critică AI automată pentru outfit selectat | ✅ Done |
-| US-06 | 🟡 Should Have | Vizualizare digitală a combinațiilor de outfit | ✅ Done |
-| US-07 | 🟡 Should Have | Salvare outfit-uri în lista de favorite | ✅ Done |
-| US-08 | 🟡 Should Have | Căutare NLP în garderobă (limbaj natural) | ✅ Done |
-| US-09 | 🟢 Could Have | Sugestii haine similare dintr-o poză externă | ⚠️ Parțial |
-| US-10 | 🟢 Could Have | Căutare outfit după vibe / stil specific | ⚠️ Parțial |
+| US-02 | 🔴 Must Have | Upload haine cu descriere | ✅ Done |
+| US-03 | 🔴 Must Have | Upload haine cu auto-categorizare AI (Gemini Vision) | ✅ Done |
+| US-04 | 🔴 Must Have | CRUD complet garderobă virtuală | ✅ Done |
+| US-05 | 🔴 Must Have | Sugestii outfit bazate pe vreme și ocazie | ✅ Done |
+| US-06 | 🔴 Must Have | Critică AI automată pentru outfit selectat | ✅ Done |
+| US-07 | 🟡 Should Have | Vizualizare digitală a combinațiilor de outfit | ✅ Done |
+| US-08 | 🟡 Should Have | Salvare outfit-uri în lista de favorite | ✅ Done |
+| US-09 | 🟡 Should Have | Căutare NLP în garderobă (limbaj natural) | ✅ Done |
+| US-10 | 🟡 Should Have | Căutare outfit după vibe / stil specific | ✅ Done |
 
 ---
 
